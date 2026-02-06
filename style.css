@@ -1,83 +1,93 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container{
     width: 1200px;
     margin: 0 auto;
 }
 
-.new-cllection{
+.header{
     display: flex;
-    border: 5px solid rgba(117, 0, 0, 1);
-    border-radius: 63px;
-    overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.l-block,
-.c-block,
-.r-block{
-    width: 33%;
-}
-
-.r-block{
-    flex-grow: 1;
-}
-
-.r-block img{
-        width: 100%;
-        height: 100%;
-}
-
-.l-block{
-    background: rgba(255, 255, 255, 1);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 100%);
-    color: #750000;
+.modal{
+    /*padding: 50px;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    inset: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    h2{
-        font-size: 54px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        padding: 10px;
-        margin-top: -7px;
-    }
+    justify-content: flex-end;
+    align-items: stretch;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
 }
 
-.c-block{
-    background: #750000;
-    color: white;
+.modal-content{
+    background-color: #fefefe;
+    width: 300px;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    color:#750000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.modal.open{
+    transform: translateX(0);
+}
+
+
+.close{
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    h2{
-        font-size: 54px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        padding: 10px;
-    }
+}
+
+.blacksi{
+    border:1px solid gray;
+    border-radius: 20px;
+
+}
+
+.active{
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.sport{
+    font-weight: 400;
+    font-size: 24px;
+    color:#533333;
+}
+
+.rus{
+    font-weight: 400;
+    font-size: 36px;
+    color:#000000
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
     p{
-        margin-left: 100px;
-        color: rgba(224, 190, 162, 1);
-        text-decoration: none;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        /*text-align: center;*/
+        color: #750000;
+        font-weight: 500;
+        font-size: 24px;
     }
-    .liner{
-        width: 162px;
-        height: 2px;
-        background: rgba(224, 190, 162, 1);
-        margin-left: 95px;
-        margin-top: 10px;
+    img{
+        width: 40px;
     }
 }
+
+.clothes{
+    display: flex;
+    gap:10px;
+    color:#750000;
+}
+
+.text{
+    color: #533333;
+}
+
+
