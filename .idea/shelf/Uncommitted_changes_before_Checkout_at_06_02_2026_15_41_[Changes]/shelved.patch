@@ -1,0 +1,19 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n    <header>\r\n        <div class=\"header container\">\r\n            <div class=\"clothes\">\r\n                <img src=\"./imager/img_1.png\" alt=\"\">\r\n                <div>\r\n                    <h3>Red Clothes</h3>\r\n                    <p class=\"text\">Магазин одежды для практики</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"icons\">\r\n                <img id=\"basket\" src=\"./imager/basket.svg\" alt=\"\">\r\n                <p>30 595 ₽</p>\r\n                <img src=\"./imager/hurd.svg\" alt=\"\">\r\n                <img src=\"./imager/men.svg\" alt=\"\">\r\n            </div>\r\n        </div>\r\n        <div class=\"modal\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"close\">\r\n                    <img class=\"close-icon\" src=\"./imager/red.svg\" alt=\"\">\r\n                    <h4>Корзина</h4>\r\n                </div>\r\n                <div class=\"blacksi\">\r\n                    <img src=\"\" alt=\"\">\r\n                    <h5 class=\"active\">Blacksi</h5>\r\n                    <p class=\"sport\">Костюм спортивный</p>\r\n                    <h3 class=\"rus\">3 595 ₽</h3>\r\n                </div>\r\n                <div class=\"blacksi\">\r\n                    <img src=\"\" alt=\"\">\r\n                    <h5 class=\"active\">Blacksi</h5>\r\n                    <p class=\"sport\">Костюм спортивный</p>\r\n                    <h3 class=\"rus\">3 595 ₽</h3>\r\n                </div>\r\n                <div class=\"blacksi\">\r\n                    <img src=\"\" alt=\"\">\r\n                    <h5 class=\"active\">Blacksi</h5>\r\n                    <p class=\"sport\">Костюм спортивный</p>\r\n                    <h3 class=\"rus\">3 595 ₽</h3>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </header>\r\n<script src=\"app.js\"></script>\r\n</body>\r\n</html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 2c05dccd779809702e7501c0efeb83dbaaa7325d)
++++ b/index.html	(date 1770374091719)
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>red clothes</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
