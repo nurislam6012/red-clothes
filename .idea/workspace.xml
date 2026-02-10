@@ -1,25 +1,58 @@
-<list default="true" id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="">
-  <!-- сохраняем все изменения -->
-  <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2026_15_41_[Changes]/shelved.patch" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2026_15_41__Changes_.xml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/fasedook.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/instagramm.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/telegram.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/vk.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/red-clothes.iml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/hurd.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img_1.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img_2.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/red.svg" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-</list>
-<component name="PropertiesComponent"><![CDATA[{
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/imager/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="header" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="399li6bqCNsSKlNinK51Z152fyq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -27,7 +60,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "cards",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/Админ/red-clothes",
     "list.type.of.created.stylesheet": "CSS",
@@ -39,3 +72,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="" />
+      <created>1770116291352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770116291352</updated>
+      <workItem from="1770116292590" duration="4250000" />
+      <workItem from="1770210865534" duration="38000" />
+      <workItem from="1770285132879" duration="7888000" />
+      <workItem from="1770373240163" duration="613000" />
+      <workItem from="1770747367124" duration="5245000" />
+      <workItem from="1770752667807" duration="1121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
