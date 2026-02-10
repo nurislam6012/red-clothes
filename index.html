@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="header container">
+<header class="header">
+    <div class="header-in container">
         <div class="clothes">
             <img src="./imager/headerImg.svg" alt="">
             <div>
@@ -18,57 +18,31 @@
         </div>
         <div class="icons">
             <img id="basket" src="./imager/basket.svg" alt="">
-            <p>30 595 ₽</p>
-            <img src="./imager/hurt.svg" alt="">
+            <p id="totalHeader">0 ₽</p>
+            <a href="favorites.html"><img src="./imager/hurt.svg" alt=""></a>
             <img src="./imager/men.svg" alt="">
         </div>
     </div>
     <div class="modal">
         <div class="modal-content">
 
-            <!-- HEADER -->
             <div class="close">
                 <img class="close-icon" src="./imager/arrow.svg" alt="">
                 <h4>Корзина</h4>
             </div>
 
-            <!-- ITEM -->
-            <div class="blacksi">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove"></button>
+            <div class="cart-items">
             </div>
 
-            <!-- ITEM -->
-            <div class="blacksi">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove"></button>
-            </div>
-
-            <!-- ACTIVE ITEM -->
-            <div class="blacksi active">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove active"></button>
+            <div class="empty-cart">
+                <img src="./imager/img.png" alt="Корзина пуста">
+                <p>Ваша корзина пуста</p>
             </div>
 
             <div class="cart-footer">
                 <div class="total">
                     <span>К оплате:</span>
-                    <strong>14 380 ₽</strong>
+                    <strong id="totalPrice">0 ₽</strong>
                 </div>
                 <button class="order-btn">Заказать</button>
             </div>
@@ -202,10 +176,6 @@
                 </div>
             </div>
         </div>
-
-        <h3 class="cart-title">Корзина</h3>
-        <ul class="cart"></ul>
-
     </div>
 </section>
 
