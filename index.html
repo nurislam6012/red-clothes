@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="header container">
+<header class="header">
+    <div class="header-in container">
         <div class="clothes">
             <img src="./imager/headerImg.svg" alt="">
             <div>
@@ -18,57 +18,39 @@
         </div>
         <div class="icons">
             <img id="basket" src="./imager/basket.svg" alt="">
-            <p>30 595 ₽</p>
-            <img src="./imager/hurt.svg" alt="">
+            <p id="totalHeader">0 ₽</p>
+            <a href="favorites.html"><img src="./imager/hurt.svg" alt=""></a>
             <img src="./imager/men.svg" alt="">
         </div>
     </div>
     <div class="modal">
         <div class="modal-content">
 
-            <!-- HEADER -->
             <div class="close">
                 <img class="close-icon" src="./imager/arrow.svg" alt="">
                 <h4>Корзина</h4>
             </div>
 
-            <!-- ITEM -->
-            <div class="blacksi">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove"></button>
+            <div class="cart-items">
             </div>
 
-            <!-- ITEM -->
-            <div class="blacksi">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove"></button>
+            <div class="empty-cart">
+                <img src="./imager/img.png" alt="Корзина пуста">
+                <p>Ваша корзина пуста</p>
             </div>
-
-            <!-- ACTIVE ITEM -->
-            <div class="blacksi active">
-                <img src="./imager/product.jpg" alt="">
-                <div class="info">
-                    <h5>Blacksi</h5>
-                    <p class="sport">Костюм спортивный</p>
-                    <h3 class="rus">3 595 ₽</h3>
-                </div>
-                <button class="remove active"></button>
+            
+            <div class="oformlenie">
+                <h4>Ваш заказ оформлен</h4>
+                <img style="width: 200px" src="./imager/img_1.png" alt="">
+                <p>Спасибо за покупку!
+                    Ваш заказ #41 скоро будет передан курьеру.</p>
+                <button>Вернуться</button>
             </div>
 
             <div class="cart-footer">
                 <div class="total">
                     <span>К оплате:</span>
-                    <strong>14 380 ₽</strong>
+                    <strong id="totalPrice">0 ₽</strong>
                 </div>
                 <button class="order-btn">Заказать</button>
             </div>
@@ -77,7 +59,7 @@
 
 </header>
 
-<section class="new-cllection cotainer">
+<section class="new-cllection container">
     <div class="l-block">
         <h2 class="h2">новая</h2>
 <!--        <p>&nbsp;</p>-->
@@ -91,6 +73,125 @@
         <img class="img" src="./imager/ab7c4a3a-5286-451c-bead-caf893af90d4.jpg" alt="">
     </div>
 </section>
+
+<section class="shop">
+    <div class="container">
+
+        <h2 class="title">Все товары</h2>
+
+        <div class="products">
+            <div class="card" data-id="1">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img class="card-img" src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="2">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="3">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="4">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="5">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="6">
+            <img class="img-mini" src="imager/mini.svg" alt="">
+                <img src="./imager/img_11.png" alt="">
+                <div class="card-info">
+                    <h3>Fashion.Love.Story</h3>
+                    <p>Платье</p>
+                    <div>
+                    <span class="price">
+                       <span>ЦЕНА: </span> <br>
+                        3 500 ₽</span>
+                        <button class="add-btn"
+                                data-name="Fashion.Love.Story"
+                                data-price="3500">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="footer">
     <div class="container footer-in">

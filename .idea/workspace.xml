@@ -1,41 +1,107 @@
-<list default="true" id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="">
-  <!-- сохраняем все изменения -->
-  <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2026_15_41_[Changes]/shelved.patch" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2026_15_41__Changes_.xml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/fasedook.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/instagramm.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/telegram.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/vk.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/.idea/red-clothes.iml" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/hurd.svg" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img_1.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/img_2.png" afterDir="false" />
-  <change afterPath="$PROJECT_DIR$/imager/red.svg" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-  <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-</list>
-<component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "C:/Users/Админ/red-clothes",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/imager/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/mini.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_02_2026_16_54_[Changes]/ab7c4a3a-5286-451c-bead-caf893af90d4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_02_2026_16_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_02_2026_16_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favorites.css" beforeDir="false" afterPath="$PROJECT_DIR$/favorites.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/favorites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imager/img_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="modal" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="399li6bqCNsSKlNinK51Z152fyq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Админ/red-clothes&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="" />
+      <created>1770116291352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770116291352</updated>
+      <workItem from="1770116292590" duration="4250000" />
+      <workItem from="1770210865534" duration="38000" />
+      <workItem from="1770285132879" duration="7888000" />
+      <workItem from="1770373240163" duration="613000" />
+      <workItem from="1770747367124" duration="5245000" />
+      <workItem from="1770752667807" duration="1121000" />
+      <workItem from="1770916254680" duration="10805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

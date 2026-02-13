@@ -1,0 +1,1062 @@
+Index: favorites.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.h2{\r\n    font-size: 36px;\r\n    color: rgba(117, 0, 0, 1);\r\n\r\n}\r\n.h4{\r\n    color: rgba(117, 0, 0, 1);\r\n  font-size: 24px;\r\n    margin-bottom: 5px;\r\n}\r\n.p{\r\n    color: rgba(83, 51, 51, 1);\r\n    font-size: 24px;\r\n    margin-bottom: 19px;\r\n}\r\n.h21{\r\n    font-size: 24px;\r\n    margin-bottom: 5px;\r\n}\r\n.span{\r\n    font-size: 36px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/favorites.css b/favorites.css
+--- a/favorites.css	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/favorites.css	(date 1770805236316)
+@@ -1,22 +1,605 @@
++.cardst{
++    display: flex;
++    gap: 105px;
++}
++
++
+ .h2{
++    margin-top: 150px;
+     font-size: 36px;
+     color: rgba(117, 0, 0, 1);
++    margin-bottom: 50px;
+ 
+ }
+-.h4{
+-    color: rgba(117, 0, 0, 1);
+-  font-size: 24px;
+-    margin-bottom: 5px;
+-}
+-.p{
+-    color: rgba(83, 51, 51, 1);
++
++
++.card {
++    width: 330px;
++    border: 1px solid #ddd;
++    /*padding: 12px;*/
++    border-radius: 27px;
++    transition: box-shadow 0.3s ease;
++    h3{
++        font-size: 22px;
++        font-weight: 700;
++        font-family: "Roboto", sans-serif;
++        color: rgba(117, 0, 0, 1);
++        margin-bottom: 5px;
++    }
++    p{
++        font-size: 20px;
++        font-family: "Open Sans", sans-serif;
++        font-weight: 400;
++        color: rgba(83, 51, 51, 1);
++        margin-bottom: 15px;
++    }
++    .card-info div{
++        display: flex;
++        justify-content: space-between;
++        align-items: center;
++    }
++}
++
++.card:hover {
++    box-shadow: 8px 5px 8px darkred;
++}
++
++.card-info{
++    padding: 15px 15px 10px 15px;
++}
++
++.card img {
++    width: 100%;
++    /*border-radius: 2px;*/
++}
++
++.price {
++    display: block;
++    margin: 10px 0;
++    font-family: "Roboto", sans-serif;
++    font-size: 24px;
++    font-weight: 400;
++    color: rgba(0, 0, 0, 1);
++    span{
++        font-family: "Open Sans", sans-serif;
++        font-weight: 400;
++        font-size: 18px;
++        color: rgba(125, 125, 125, 1);
++    }
++}
++
++.add-btn {
++    width: 70px;
++    height: 70px;
++    border-radius: 10px;
++    background: white;
++    color: #c5c5c5;
++    border: 2px solid #c5c5c5;
++    font-size: 35px;
++    font-weight: 700;
++    cursor: pointer;
++}
++
++section .favorit{
++    margin-bottom: 50px;
++}
++
++
++
++
++
++
++
++
++
++
++.container{
++    width: 1200px;
++    margin: 0 auto;
++}
++
++.header{
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    position: fixed;
++    top: 0;
++    left: 0;
++    right: 0;
++    /*width: 100%;*/
++    z-index: 100;
++    background: white;
++}
++
++.header-in{
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++}
++
++.modal{
++    /*padding: 50px;*/
++    background-color: rgba(0, 0, 0, 0.5);
++    position:fixed;
++    inset: 0;
++    display: flex;
++    justify-content: flex-end;
++    align-items: stretch;
++    transform: translateX(100%);
++    transition: transform 0.3s ease;
++    z-index: 10;
++}
++
++.modal-content{
++    background-color: #fefefe;
++    width: 300px;
++    padding: 20px;
++    border-radius: 0 10px 10px 0;
++    color:#750000;
++    top: 0;
++    left: 0;
++    height: 100vh;
++    overflow-y: auto;
++}
++
++.modal.open{
++    transform: translateX(0);
++}
++
++
++.close{
++    display: flex;
++}
++
++.cart-items {
++    display: flex;
++    flex-direction: column;
++    gap: 12px;
++}
++
++.empty-cart {
++    display: none;
++    flex-direction: column;
++    align-items: center;
++    justify-content: center;
++    text-align: center;
++    margin-top: 50px;
++    color: #750000;
++}
++
++.empty-cart img {
++    width: 150px;
++    margin-bottom: 20px;
++}
++
++/*.modal.open .empty-cart {*/
++/*    display: flex;*/
++/*}*/
++
++
++.blacksi{
++    border:1px solid gray;
++    border-radius: 20px;
++
++}
++
++.active{
++    font-weight: 700;
++    font-size: 24px;
++
++}
++
++.sport{
++    font-weight: 400;
++    font-size: 24px;
++    color:#533333;
++}
++
++.rus{
++    font-weight: 400;
++    font-size: 36px;
++    color:#000000
++}
++
++.icons{
++    display: flex;
++    gap: 20px;
++    align-items: center;
++    p{
++        color: #750000;
++        font-weight: 500;
++        font-size: 24px;
++    }
++    img{
++        width: 40px;
++    }
++    a{
++        align-items: center;
++        display: flex;
++    }
++}
++
++.clothes{
++    display: flex;
++    gap:10px;
++    color:#750000;
++}
++
++.text{
++    color: #533333;
++}
++
++.new-cllection{
++    display: flex;
++    border: 5px solid rgba(117, 0, 0, 1);
++    border-radius: 63px;
++    overflow: hidden;
++    margin-top: 150px;
++    margin-bottom: 50px;
++}
++
++.l-block,
++.c-block,
++.r-block{
++    width: 33%;
++}
++
++.r-block{
++    flex-grow: 1;
++}
++
++.r-block img{
++    width: 100%;
++    height: 100%;
++}
++
++.l-block{
++    background: rgba(255, 255, 255, 1);
++    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 100%);
++    color: #750000;
++    display: flex;
++    justify-content: center;
++    align-items: flex-end;
++    flex-direction: column;
++    h2{
++        font-size: 54px;
++        font-family: "Roboto", sans-serif;
++        font-weight: 400;
++        padding: 10px;
++        margin-top: -19px;
++    }
++}
++
++.c-block{
++    background: #750000;
++    color: white;
++    display: flex;
++    align-items: flex-start;
++    flex-direction: column;
++    justify-content: center;
++    h2{
++        font-size: 54px;
++        font-family: "Roboto", sans-serif;
++        font-weight: 400;
++        padding: 10px;
++    }
++    p{
++        margin-left: 100px;
++        color: rgba(224, 190, 162, 1);
++        text-decoration: none;
++        font-family: "Open Sans", sans-serif;
++        font-weight: 400;
++        font-size: 16px;
++        /*text-align: center;*/
++    }
++    .liner{
++        width: 162px;
++        height: 2px;
++        background: rgba(224, 190, 162, 1);
++        margin-left: 95px;
++        margin-top: 10px;
++    }
++}
++
++
++.close {
++    align-items: center;
++    gap: 12px;
++    padding: 16px;
++    border-bottom: 1px solid #eee;
++}
++
++.close h4 {
++    margin: 0;
++    font-size: 20px;
++    font-weight: 600;
++    color: #750000;
++}
++
++/* CART ITEM */
++
++.blacksi {
++    display: flex;
++    align-items: center;
++    gap: 12px;
++    padding: 12px;
++    margin: 12px;
++    border: 1px solid #e6e6e6;
++    border-radius: 14px;
++    background: #fff;
++}
++
++/* ACTIVE ITEM */
++
++.blacksi.active {
++    border-color: #750000;
++}
++
++/* IMAGE */
++
++.blacksi img {
++    width: 64px;
++    height: 64px;
++    border-radius: 10px;
++    background: #f2f2f2;
++    object-fit: cover;
++}
++
++.blacksi .info {
++    flex: 1;
++}
++
++.blacksi h5 {
++    margin: 0;
++    font-size: 14px;
++    font-weight: 600;
++    color: #000;
++}
++
++.blacksi .sport {
++    margin: 3px 0 6px;
++    font-size: 13px;
++    font-weight: 400;
++    color: #8a8a8a;
++}
++
++.blacksi .rus {
++    margin: 0;
++    font-size: 16px;
++    font-weight: 600;
++    color: #000;
++}
++
++/* REMOVE BUTTON */
++
++.blacksi .remove {
++    width: 28px;
++    height: 28px;
++    border-radius: 8px;
++    border: 1px solid #d9d9d9;
++    background: transparent;
++    position: relative;
++    flex-shrink: 0;
++    cursor: pointer;
++}
++
++.blacksi .remove::before,
++.blacksi .remove::after {
++    content: "";
++    position: absolute;
++    top: 50%;
++    left: 50%;
++    width: 14px;
++    height: 2px;
++    background: #b3b3b3;
++}
++
++.blacksi .remove::before {
++    transform: translate(-50%, -50%) rotate(45deg);
++}
++
++.blacksi .remove::after {
++    transform: translate(-50%, -50%) rotate(-45deg);
++}
++
++.blacksi .remove.active {
++    border-color: #750000;
++}
++
++.blacksi .remove.active::before,
++.blacksi .remove.active::after {
++    background: #750000;
++}
++
++
++.cart-footer {
++    position: sticky;
++    bottom: 0;
++    background: #fff;
++    border-top: 1px solid #eee;
++    padding: 14px 12px;
++    display: flex;
++    align-items: center;
++    gap: 12px;
++}
++
++.total {
++    flex: 1;
++    font-size: 14px;
++}
++
++.total strong {
++    font-size: 18px;
++    font-weight: 700;
++}
++
++/* BUTTON */
++
++.order-btn {
++    padding: 14px 22px;
++    border-radius: 16px;
++    border: 2px solid #750000;
++    background: #fff;
++    color: #750000;
++    font-size: 16px;
++    font-weight: 600;
++    cursor: pointer;
++}
++
++.mini{
++    width: 32px;
++    height: 32px;
++    position: absolute;
++    z-index: 100;
++}
++
++footer {
++    background: #750000;
++    margin-top: 100px;
++}
++
++.footer-in {
++    display: flex;
++    justify-content: space-between;
++    padding:50px;
++}
++
++.pokupatel{
++    color: white;
++    font-weight: 700;
++    font-size: 24px;
++}
++.text{
++    color:gray;
++    font-weight: 400;
++    font-size: 16px;
++}
++.company{
++    color: #FFFFFF;
++    font-weight: 700;
+     font-size: 24px;
+-    margin-bottom: 19px;
+ }
+-.h21{
++.contakt{
++    color:#D9D9D9;
++    font-weight: 400;
+     font-size: 24px;
+-    margin-bottom: 5px;
+-}
+-.span{
+-    font-size: 36px;
+-}
+\ No newline at end of file
++}
++
++.sos{
++    color: #FFFFFF;
++    font-weight: 700;
++    font-size: 24px;
++    margin-top: 48px;
++    margin-bottom: 20px;
++}
++.programs{
++    display: flex;
++    gap: 20px
++}
++.class{
++    font-weight: 700;
++    font-size: 24px;
++    color:white;
++}
++
++
++.shop {
++    padding: 40px 0;
++}
++
++.title {
++    margin-bottom: 20px;
++    font-weight: 700;
++    font-size: 36px;
++    font-family: "Open Sans", sans-serif;
++    color: rgba(117, 0, 0, 1);
++}
++
++.products {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 30px;
++    justify-content: space-between;}
++
++.card {
++    width: 330px;
++    border: 1px solid #ddd;
++    /*padding: 12px;*/
++    border-radius: 27px;
++    transition: box-shadow 0.3s ease;
++    h3{
++        font-size: 22px;
++        font-weight: 700;
++        font-family: "Roboto", sans-serif;
++        color: rgba(117, 0, 0, 1);
++        margin-bottom: 5px;
++    }
++    p{
++        font-size: 20px;
++        font-family: "Open Sans", sans-serif;
++        font-weight: 400;
++        color: rgba(83, 51, 51, 1);
++        margin-bottom: 15px;
++    }
++    .card-info div{
++        display: flex;
++        justify-content: space-between;
++        align-items: center;
++        /*position: relative;*/
++
++    }
++}
++
++.card:hover {
++    box-shadow: 8px 5px 8px darkred;
++}
++
++.card-info{
++    padding: 15px 15px 10px 15px;
++}
++
++.big-img {
++    width: 100%;
++    /*border-radius: 2px;*/
++    position: relative;
++}
++
++.price {
++    display: block;
++    margin: 10px 0;
++    font-family: "Roboto", sans-serif;
++    font-size: 24px;
++    font-weight: 400;
++    color: rgba(0, 0, 0, 1);
++    span{
++        font-family: "Open Sans", sans-serif;
++        font-weight: 400;
++        font-size: 18px;
++        color: rgba(125, 125, 125, 1);
++    }
++}
++
++.add-btn {
++    width: 70px;
++    height: 70px;
++    border-radius: 10px;
++    background: white;
++    color: #c5c5c5;
++    border: 2px solid #c5c5c5;
++    font-size: 35px;
++    font-weight: 700;
++    cursor: pointer;
++}
++
++.cart {
++    margin-top: 15px;
++    padding-left: 20px;
++}
++
++.hidden{
++    display: none;
++}
++
++
++
++
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>red clothes</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n<header class=\"header\">\r\n    <div class=\"header-in container\">\r\n        <div class=\"clothes\">\r\n            <img src=\"./imager/headerImg.svg\" alt=\"\">\r\n            <div>\r\n                <h3>Red Clothes</h3>\r\n                <p class=\"text\">Магазин одежды для практики</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"icons\">\r\n            <img id=\"basket\" src=\"./imager/basket.svg\" alt=\"\">\r\n            <p id=\"totalHeader\">0 ₽</p>\r\n            <a href=\"favorites.html\"><img src=\"./imager/hurt.svg\" alt=\"\"></a>\r\n            <img src=\"./imager/men.svg\" alt=\"\">\r\n        </div>\r\n    </div>\r\n    <div class=\"modal\">\r\n        <div class=\"modal-content\">\r\n\r\n            <div class=\"close\">\r\n                <img class=\"close-icon\" src=\"./imager/arrow.svg\" alt=\"\">\r\n                <h4>Корзина</h4>\r\n            </div>\r\n\r\n            <div class=\"cart-items\">\r\n            </div>\r\n\r\n            <div class=\"empty-cart\">\r\n                <img src=\"./imager/img.png\" alt=\"Корзина пуста\">\r\n                <p>Ваша корзина пуста</p>\r\n            </div>\r\n\r\n            <div class=\"cart-footer\">\r\n                <div class=\"total\">\r\n                    <span>К оплате:</span>\r\n                    <strong id=\"totalPrice\">0 ₽</strong>\r\n                </div>\r\n                <button class=\"order-btn\">Заказать</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</header>\r\n\r\n<section class=\"new-cllection container\">\r\n    <div class=\"l-block\">\r\n        <h2 class=\"h2\">новая</h2>\r\n<!--        <p>&nbsp;</p>-->\r\n    </div>\r\n    <div class=\"c-block\">\r\n        <h2>колекция</h2>\r\n        <p>Смотреть Новинки</p>\r\n        <div class=\"liner\"></div>\r\n    </div>\r\n    <div class=\"r-block\">\r\n        <img class=\"img\" src=\"./imager/ab7c4a3a-5286-451c-bead-caf893af90d4.jpg\" alt=\"\">\r\n    </div>\r\n</section>\r\n\r\n<section class=\"shop\">\r\n    <div class=\"container\">\r\n\r\n        <h2 class=\"title\">Все товары</h2>\r\n\r\n        <div class=\"products\">\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"card\">\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"card-info\">\r\n                    <h3>Fashion.Love.Story</h3>\r\n                    <p>Платье</p>\r\n                    <div>\r\n                    <span class=\"price\">\r\n                       <span>ЦЕНА: </span> <br>\r\n                        3 500 ₽</span>\r\n                        <button class=\"add-btn\"\r\n                                data-name=\"Fashion.Love.Story\"\r\n                                data-price=\"3500\">\r\n                            +\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n\r\n<footer class=\"footer\">\r\n    <div class=\"container footer-in\">\r\n        <div class=\"footer-left\">\r\n            <p class=\"pokupatel\">Покупателям</p>\r\n            <p class=\"text\">Как сделать заказ</p>\r\n            <p class=\"text\">Способы оплаты</p>\r\n            <p class=\"text\">Способы оплатыДоставка</p>\r\n            <p class=\"text\">Возврат товара</p>\r\n            <p class=\"text\">Правила продажи</p>\r\n            <p class=\"text\">Вопросы и ответы</p>\r\n        </div>\r\n        <div class=\"footer-right\">\r\n            <p class=\"class\">Компания</p>\r\n            <p class=\"contakt\">О нас</p>\r\n            <p class=\"contakt\">Реквизиты</p>\r\n            <p class=\"contakt\">Контакты</p>\r\n            <p class=\"sos\">Мы в соцсетях</p>\r\n            <div class=\"programs\">\r\n                <img src=\"./imager/fasedook.svg\" alt=\"\">\r\n                <img src=\"./imager/instagramm.svg\" alt=\"\">\r\n                <img src=\"./imager/telegram.svg\" alt=\"\">\r\n                <img src=\"./imager/vk.svg\" alt=\"\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>\r\n<script src=\"app.js\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/index.html	(date 1770834721313)
+@@ -4,7 +4,7 @@
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>red clothes</title>
+-    <link rel="stylesheet" href="style.css">
++    <link rel="stylesheet" href="./style.css"/>
+ </head>
+ <body>
+ <header class="header">
+@@ -73,7 +73,7 @@
+ 
+         <div class="products">
+             <div class="card">
+-                <img src="./imager/img_11.png" alt="">
++                    <img src="./imager/img_11.png" alt="">
+                 <div class="card-info">
+                     <h3>Fashion.Love.Story</h3>
+                     <p>Платье</p>
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nconst basket = document.querySelector('#basket');\r\nconst modal = document.querySelector('.modal');\r\nconst closeModal = document.querySelector('.close-icon')\r\n\r\nconst addButtons = document.querySelectorAll('.add-btn');\r\nconst cartItemsContainer = document.querySelector('.cart-items');\r\nconst emptyCart = document.querySelector('.empty-cart');\r\nconst totalPriceEl = document.querySelector('#totalPrice');\r\nconst headerTotal = document.querySelector('#totalHeader');\r\n\r\n\r\n\r\nlet cart = [];\r\n\r\nbasket.addEventListener('click', () => {\r\n    modal.classList.add('open')\r\n})\r\n\r\ncloseModal.addEventListener('click', () => {\r\n    modal.classList.remove('open')\r\n})\r\n\r\n\r\nfunction updateCart() {\r\n    cartItemsContainer.innerHTML = '';\r\n\r\n    if (cart.length === 0) {\r\n        emptyCart.style.display = 'flex';\r\n    } else {\r\n        emptyCart.style.display = 'none';\r\n        cart.forEach((item, index) => {\r\n            const div = document.createElement('div');\r\n            div.classList.add('blacksi');\r\n            div.innerHTML = `\r\n                <img src=\"./imager/img_11.png\" alt=\"\">\r\n                <div class=\"info\">\r\n                    <h5>${item.name}</h5>\r\n                    <p class=\"sport\">${item.category || 'Товар'}</p>\r\n                    <h3 class=\"rus\">${item.price} ₽</h3>\r\n                </div>\r\n                <button class=\"remove\"></button>\r\n            `;\r\n\r\n            div.querySelector('.remove').addEventListener('click', () => {\r\n                cart.splice(index, 1);\r\n                updateCart();\r\n            });\r\n            cartItemsContainer.appendChild(div);\r\n        });\r\n    }\r\n\r\n    const total = cart.reduce((sum, item) => sum + Number(item.price), 0);\r\n    totalPriceEl.textContent = total + ' ₽';\r\n    headerTotal.textContent = total + ' ₽';\r\n}\r\n\r\naddButtons.forEach(btn => {\r\n    btn.addEventListener('click', () => {\r\n        const name = btn.dataset.name;\r\n        const price = btn.dataset.price;\r\n        cart.push({ name, price });\r\n        updateCart();\r\n        // modal.classList.add('open');\r\n    });\r\n});\r\n\r\nupdateCart();
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.js b/app.js
+--- a/app.js	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/app.js	(date 1770834661267)
+@@ -3,16 +3,6 @@
+ const modal = document.querySelector('.modal');
+ const closeModal = document.querySelector('.close-icon')
+ 
+-const addButtons = document.querySelectorAll('.add-btn');
+-const cartItemsContainer = document.querySelector('.cart-items');
+-const emptyCart = document.querySelector('.empty-cart');
+-const totalPriceEl = document.querySelector('#totalPrice');
+-const headerTotal = document.querySelector('#totalHeader');
+-
+-
+-
+-let cart = [];
+-
+ basket.addEventListener('click', () => {
+     modal.classList.add('open')
+ })
+@@ -21,48 +11,3 @@
+     modal.classList.remove('open')
+ })
+ 
+-
+-function updateCart() {
+-    cartItemsContainer.innerHTML = '';
+-
+-    if (cart.length === 0) {
+-        emptyCart.style.display = 'flex';
+-    } else {
+-        emptyCart.style.display = 'none';
+-        cart.forEach((item, index) => {
+-            const div = document.createElement('div');
+-            div.classList.add('blacksi');
+-            div.innerHTML = `
+-                <img src="./imager/img_11.png" alt="">
+-                <div class="info">
+-                    <h5>${item.name}</h5>
+-                    <p class="sport">${item.category || 'Товар'}</p>
+-                    <h3 class="rus">${item.price} ₽</h3>
+-                </div>
+-                <button class="remove"></button>
+-            `;
+-
+-            div.querySelector('.remove').addEventListener('click', () => {
+-                cart.splice(index, 1);
+-                updateCart();
+-            });
+-            cartItemsContainer.appendChild(div);
+-        });
+-    }
+-
+-    const total = cart.reduce((sum, item) => sum + Number(item.price), 0);
+-    totalPriceEl.textContent = total + ' ₽';
+-    headerTotal.textContent = total + ' ₽';
+-}
+-
+-addButtons.forEach(btn => {
+-    btn.addEventListener('click', () => {
+-        const name = btn.dataset.name;
+-        const price = btn.dataset.price;
+-        cart.push({ name, price });
+-        updateCart();
+-        // modal.classList.add('open');
+-    });
+-});
+-
+-updateCart();
+\ No newline at end of file
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.container{\r\n    width: 1200px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.header{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    /*width: 100%;*/\r\n    z-index: 100;\r\n    background: white;\r\n}\r\n\r\n.header-in{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.modal{\r\n    /*padding: 50px;*/\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    position:fixed;\r\n    inset: 0;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    align-items: stretch;\r\n    transform: translateX(100%);\r\n    transition: transform 0.3s ease;\r\n    z-index: 10;\r\n}\r\n\r\n.modal-content{\r\n    background-color: #fefefe;\r\n    width: 300px;\r\n    padding: 20px;\r\n    border-radius: 0 10px 10px 0;\r\n    color:#750000;\r\n    top: 0;\r\n    left: 0;\r\n    height: 100vh;\r\n    overflow-y: auto;\r\n}\r\n\r\n.modal.open{\r\n    transform: translateX(0);\r\n}\r\n\r\n\r\n.close{\r\n    display: flex;\r\n}\r\n\r\n.cart-items {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 12px;\r\n}\r\n\r\n.empty-cart {\r\n    display: none;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    text-align: center;\r\n    margin-top: 50px;\r\n    color: #750000;\r\n}\r\n\r\n.empty-cart img {\r\n    width: 150px;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n/*.modal.open .empty-cart {*/\r\n/*    display: flex;*/\r\n/*}*/\r\n\r\n\r\n.blacksi{\r\n    border:1px solid gray;\r\n    border-radius: 20px;\r\n\r\n}\r\n\r\n.active{\r\n    font-weight: 700;\r\n    font-size: 24px;\r\n\r\n}\r\n\r\n.sport{\r\n    font-weight: 400;\r\n    font-size: 24px;\r\n    color:#533333;\r\n}\r\n\r\n.rus{\r\n    font-weight: 400;\r\n    font-size: 36px;\r\n    color:#000000\r\n}\r\n\r\n.icons{\r\n    display: flex;\r\n    gap: 20px;\r\n    align-items: center;\r\n    p{\r\n        color: #750000;\r\n        font-weight: 500;\r\n        font-size: 24px;\r\n    }\r\n    img{\r\n        width: 40px;\r\n    }\r\n    a{\r\n        align-items: center;\r\n        display: flex;\r\n    }\r\n}\r\n\r\n.clothes{\r\n    display: flex;\r\n    gap:10px;\r\n    color:#750000;\r\n}\r\n\r\n.text{\r\n    color: #533333;\r\n}\r\n\r\n.new-cllection{\r\n    display: flex;\r\n    border: 5px solid rgba(117, 0, 0, 1);\r\n    border-radius: 63px;\r\n    overflow: hidden;\r\n    margin-top: 150px;\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.l-block,\r\n.c-block,\r\n.r-block{\r\n    width: 33%;\r\n}\r\n\r\n.r-block{\r\n    flex-grow: 1;\r\n}\r\n\r\n.r-block img{\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.l-block{\r\n    background: rgba(255, 255, 255, 1);\r\n    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 100%);\r\n    color: #750000;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: flex-end;\r\n    flex-direction: column;\r\n    h2{\r\n        font-size: 54px;\r\n        font-family: \"Roboto\", sans-serif;\r\n        font-weight: 400;\r\n        padding: 10px;\r\n        margin-top: -19px;\r\n    }\r\n}\r\n\r\n.c-block{\r\n    background: #750000;\r\n    color: white;\r\n    display: flex;\r\n    align-items: flex-start;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    h2{\r\n        font-size: 54px;\r\n        font-family: \"Roboto\", sans-serif;\r\n        font-weight: 400;\r\n        padding: 10px;\r\n    }\r\n    p{\r\n        margin-left: 100px;\r\n        color: rgba(224, 190, 162, 1);\r\n        text-decoration: none;\r\n        font-family: \"Open Sans\", sans-serif;\r\n        font-weight: 400;\r\n        font-size: 16px;\r\n        /*text-align: center;*/\r\n    }\r\n    .liner{\r\n        width: 162px;\r\n        height: 2px;\r\n        background: rgba(224, 190, 162, 1);\r\n        margin-left: 95px;\r\n        margin-top: 10px;\r\n    }\r\n}\r\n\r\n\r\n.close {\r\n    align-items: center;\r\n    gap: 12px;\r\n    padding: 16px;\r\n    border-bottom: 1px solid #eee;\r\n}\r\n\r\n.close h4 {\r\n    margin: 0;\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n    color: #750000;\r\n}\r\n\r\n/* CART ITEM */\r\n\r\n.blacksi {\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 12px;\r\n    padding: 12px;\r\n    margin: 12px;\r\n    border: 1px solid #e6e6e6;\r\n    border-radius: 14px;\r\n    background: #fff;\r\n}\r\n\r\n/* ACTIVE ITEM */\r\n\r\n.blacksi.active {\r\n    border-color: #750000;\r\n}\r\n\r\n/* IMAGE */\r\n\r\n.blacksi img {\r\n    width: 64px;\r\n    height: 64px;\r\n    border-radius: 10px;\r\n    background: #f2f2f2;\r\n    object-fit: cover;\r\n}\r\n\r\n.blacksi .info {\r\n    flex: 1;\r\n}\r\n\r\n.blacksi h5 {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    font-weight: 600;\r\n    color: #000;\r\n}\r\n\r\n.blacksi .sport {\r\n    margin: 3px 0 6px;\r\n    font-size: 13px;\r\n    font-weight: 400;\r\n    color: #8a8a8a;\r\n}\r\n\r\n.blacksi .rus {\r\n    margin: 0;\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    color: #000;\r\n}\r\n\r\n/* REMOVE BUTTON */\r\n\r\n.blacksi .remove {\r\n    width: 28px;\r\n    height: 28px;\r\n    border-radius: 8px;\r\n    border: 1px solid #d9d9d9;\r\n    background: transparent;\r\n    position: relative;\r\n    flex-shrink: 0;\r\n    cursor: pointer;\r\n}\r\n\r\n.blacksi .remove::before,\r\n.blacksi .remove::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    width: 14px;\r\n    height: 2px;\r\n    background: #b3b3b3;\r\n}\r\n\r\n.blacksi .remove::before {\r\n    transform: translate(-50%, -50%) rotate(45deg);\r\n}\r\n\r\n.blacksi .remove::after {\r\n    transform: translate(-50%, -50%) rotate(-45deg);\r\n}\r\n\r\n.blacksi .remove.active {\r\n    border-color: #750000;\r\n}\r\n\r\n.blacksi .remove.active::before,\r\n.blacksi .remove.active::after {\r\n    background: #750000;\r\n}\r\n\r\n\r\n.cart-footer {\r\n    position: sticky;\r\n    bottom: 0;\r\n    background: #fff;\r\n    border-top: 1px solid #eee;\r\n    padding: 14px 12px;\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 12px;\r\n}\r\n\r\n.total {\r\n    flex: 1;\r\n    font-size: 14px;\r\n}\r\n\r\n.total strong {\r\n    font-size: 18px;\r\n    font-weight: 700;\r\n}\r\n\r\n/* BUTTON */\r\n\r\n.order-btn {\r\n    padding: 14px 22px;\r\n    border-radius: 16px;\r\n    border: 2px solid #750000;\r\n    background: #fff;\r\n    color: #750000;\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    cursor: pointer;\r\n}\r\n\r\n\r\nfooter {\r\n    background: #750000;\r\n}\r\n\r\n.footer-in {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding:50px;\r\n}\r\n\r\n.pokupatel{\r\n    color: white;\r\n    font-weight: 700;\r\n    font-size: 24px;\r\n}\r\n.text{\r\n    color:gray;\r\n    font-weight: 400;\r\n    font-size: 16px;\r\n}\r\n.company{\r\n    color: #FFFFFF;\r\n    font-weight: 700;\r\n    font-size: 24px;\r\n}\r\n.contakt{\r\n    color:#D9D9D9;\r\n    font-weight: 400;\r\n    font-size: 24px;\r\n}\r\n\r\n.sos{\r\n    color: #FFFFFF;\r\n    font-weight: 700;\r\n    font-size: 24px;\r\n    margin-top: 48px;\r\n    margin-bottom: 20px;\r\n}\r\n.programs{\r\n    display: flex;\r\n    gap: 20px\r\n}\r\n.class{\r\n    font-weight: 700;\r\n    font-size: 24px;\r\n    color:white;\r\n}\r\n\r\n\r\n.shop {\r\n    padding: 40px 0;\r\n}\r\n\r\n.title {\r\n    margin-bottom: 20px;\r\n    font-weight: 700;\r\n    font-size: 36px;\r\n    font-family: \"Open Sans\", sans-serif;\r\n    color: rgba(117, 0, 0, 1);\r\n}\r\n\r\n.products {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    gap: 30px;\r\njustify-content: space-between;}\r\n\r\n.card {\r\n    width: 330px;\r\n    border: 1px solid #ddd;\r\n    /*padding: 12px;*/\r\n    border-radius: 27px;\r\n    transition: box-shadow 0.3s ease;\r\n    h3{\r\n        font-size: 22px;\r\n        font-weight: 700;\r\n        font-family: \"Roboto\", sans-serif;\r\n        color: rgba(117, 0, 0, 1);\r\n        margin-bottom: 5px;\r\n        }\r\n    p{\r\n        font-size: 20px;\r\n        font-family: \"Open Sans\", sans-serif;\r\n        font-weight: 400;\r\n        color: rgba(83, 51, 51, 1);\r\n        margin-bottom: 15px;\r\n    }\r\n    .card-info div{\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n    }\r\n}\r\n\r\n.card:hover {\r\n    box-shadow: 8px 5px 8px darkred;\r\n}\r\n\r\n.card-info{\r\n    padding: 15px 15px 10px 15px;\r\n}\r\n\r\n.card img {\r\n    width: 100%;\r\n    /*border-radius: 2px;*/\r\n}\r\n\r\n.price {\r\n    display: block;\r\n    margin: 10px 0;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-size: 24px;\r\n    font-weight: 400;\r\n    color: rgba(0, 0, 0, 1);\r\n    span{\r\n        font-family: \"Open Sans\", sans-serif;\r\n        font-weight: 400;\r\n        font-size: 18px;\r\n        color: rgba(125, 125, 125, 1);\r\n    }\r\n}\r\n\r\n.add-btn {\r\n    width: 70px;\r\n    height: 70px;\r\n    border-radius: 10px;\r\n    background: white;\r\n    color: #c5c5c5;\r\n    border: 2px solid #c5c5c5;\r\n    font-size: 35px;\r\n    font-weight: 700;\r\n    cursor: pointer;\r\n}\r\n\r\n.cart {\r\n    margin-top: 15px;\r\n    padding-left: 20px;\r\n}\r\n\r\n.hidden{\r\n    display: none;\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style.css b/style.css
+--- a/style.css	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/style.css	(date 1770834710717)
+@@ -354,6 +354,7 @@
+ 
+ footer {
+     background: #750000;
++    margin-top: 100px;
+ }
+ 
+ .footer-in {
+@@ -425,6 +426,7 @@
+     /*padding: 12px;*/
+     border-radius: 27px;
+     transition: box-shadow 0.3s ease;
++    position: relative;
+     h3{
+         font-size: 22px;
+         font-weight: 700;
+@@ -456,7 +458,7 @@
+ 
+ .card img {
+     width: 100%;
+-    /*border-radius: 2px;*/
++    display: block;
+ }
+ 
+ .price {
+@@ -495,4 +497,3 @@
+     display: none;
+ }
+ 
+-
+Index: favorites.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n    <link rel=\"stylesheet\" href=\"./favorites.css\">\r\n</head>\r\n<body>\r\n<section>\r\n    <h2 class=\"h2\">Мои  избранные товары</h2>\r\n    <div class=\"favo\">\r\n      <img src=\"./imager/img_11.png\" alt=\"\">\r\n    <div class=\"img-div1\">\r\n   <h4 class=\"h4\">Blacksi</h4>\r\n        <p class=\"p\">Костюм спортивный</p>\r\n        <div class=\"sena\">\r\n            <h2 class=\"h21\">ЦЕНА:</h2>\r\n            <span class=\"span\">3 595 ₽</span>\r\n        </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n    <div class=\"favo\">\r\n        <img src=\"./imager/img_11.png\" alt=\"\">\r\n        <div class=\"img-div1\">\r\n            <h4 class=\"h4\">Blacksi</h4>\r\n            <p class=\"p\">Костюм спортивный</p>\r\n            <div class=\"sena\">\r\n                <h2 class=\"h21\">ЦЕНА:</h2>\r\n                <span class=\"span\">3 595 ₽</span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n\r\n</section>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/favorites.html b/favorites.html
+--- a/favorites.html	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/favorites.html	(date 1770885320186)
+@@ -6,35 +6,124 @@
+     <link rel="stylesheet" href="./favorites.css">
+ </head>
+ <body>
+-<section>
+-    <h2 class="h2">Мои  избранные товары</h2>
+-    <div class="favo">
+-      <img src="./imager/img_11.png" alt="">
+-    <div class="img-div1">
+-   <h4 class="h4">Blacksi</h4>
+-        <p class="p">Костюм спортивный</p>
+-        <div class="sena">
+-            <h2 class="h21">ЦЕНА:</h2>
+-            <span class="span">3 595 ₽</span>
+-        </div>
+-    </div>
+-  </div>
++
++<header class="header">
++    <div class="header-in container">
++        <div class="clothes">
++            <img src="./imager/headerImg.svg" alt="">
++            <div>
++                <h3>Red Clothes</h3>
++                <p class="text">Магазин одежды для практики</p>
++            </div>
++        </div>
++        <div class="icons">
++            <img id="basket" src="./imager/basket.svg" alt="">
++            <p id="totalHeader">0 ₽</p>
++            <a href="favorites.html"><img src="./imager/hurt.svg" alt=""></a>
++            <img src="./imager/men.svg" alt="">
++        </div>
++    </div>
++    <div class="modal">
++        <div class="modal-content">
++
++            <div class="close">
++                <img class="close-icon" src="./imager/arrow.svg" alt="">
++                <h4>Корзина</h4>
++            </div>
++
++            <div class="cart-items">
++            </div>
++
++            <div class="empty-cart">
++                <img src="./imager/img.png" alt="Корзина пуста">
++                <p>Ваша корзина пуста</p>
++            </div>
++
++            <div class="cart-footer">
++                <div class="total">
++                    <span>К оплате:</span>
++                    <strong id="totalPrice">0 ₽</strong>
++                </div>
++                <button class="order-btn">Заказать</button>
++            </div>
++        </div>
++    </div>
++
++</header>
++
++
++<section class="favorit container">
++    <h2 class="h2">Мои избранные товары</h2>
++    <div class="cardst">
++            <img class="mini" src="imager/mini.svg">
++        <div class="card">
++            <img class="big-img" src="./imager/img_11.png" alt="">
++            <div class="card-info">
++                <h3>Blacksi</h3>
++                <p>Костюм спортивный</p>
++                <div>
++                    <span class="price">
++                       <span>ЦЕНА: </span> <br>
++                        3 595 ₽</span>
++                    <button class="add-btn"
++                            data-name="Fashion.Love.Story"
++                            data-price="3500">
++                        +
++                    </button>
++                </div>
++            </div>
++        </div>
+ 
+-
+-    <div class="favo">
+-        <img src="./imager/img_11.png" alt="">
+-        <div class="img-div1">
+-            <h4 class="h4">Blacksi</h4>
+-            <p class="p">Костюм спортивный</p>
+-            <div class="sena">
+-                <h2 class="h21">ЦЕНА:</h2>
+-                <span class="span">3 595 ₽</span>
+-            </div>
+-        </div>
++        <div class="card">
++            <img class="mini" src="imager/mini.svg">
++            <img src="./imager/img_11.png" alt="">
++            <div class="card-info">
++                <h3>Vittoria Vicci</h3>
++                <p>Пуловер</p>
++                <div>
++                    <span class="price">
++                       <span>ЦЕНА: </span> <br>
++                        3 595 ₽</span>
++                    <button class="add-btn"
++                            data-name="Fashion.Love.Story"
++                            data-price="3500">
++                        +
++                    </button>
++                </div>
++            </div>
++
+     </div>
+-
+-
+-
+ </section>
++
++
++
++
++
++    <footer class="footer">
++        <div class="container footer-in">
++            <div class="footer-left">
++                <p class="pokupatel">Покупателям</p>
++                <p class="text">Как сделать заказ</p>
++                <p class="text">Способы оплаты</p>
++                <p class="text">Способы оплатыДоставка</p>
++                <p class="text">Возврат товара</p>
++                <p class="text">Правила продажи</p>
++                <p class="text">Вопросы и ответы</p>
++            </div>
++            <div class="footer-right">
++                <p class="class">Компания</p>
++                <p class="contakt">О нас</p>
++                <p class="contakt">Реквизиты</p>
++                <p class="contakt">Контакты</p>
++                <p class="sos">Мы в соцсетях</p>
++                <div class="programs">
++                    <img src="./imager/fasedook.svg" alt="">
++                    <img src="./imager/instagramm.svg" alt="">
++                    <img src="./imager/telegram.svg" alt="">
++                    <img src="./imager/vk.svg" alt="">
++                </div>
++            </div>
++        </div>
++    </footer>
+ </body>
+ </html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a6ef09a9-e0ad-48e8-8955-aff97fad0001\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/imager/img.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_10.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_3.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_4.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_5.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_6.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_7.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_8.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/imager/img_9.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/style.css\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"header\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"399li6bqCNsSKlNinK51Z152fyq\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"git-widget-placeholder\": \"cards\",\r\n    \"javascript.preferred.runtime.type.id\": \"node\",\r\n    \"last_opened_file_path\": \"C:/Users/Админ/red-clothes\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a6ef09a9-e0ad-48e8-8955-aff97fad0001\" name=\"Changes\" comment=\"\" />\r\n      <created>1770116291352</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1770116291352</updated>\r\n      <workItem from=\"1770116292590\" duration=\"4250000\" />\r\n      <workItem from=\"1770210865534\" duration=\"38000\" />\r\n      <workItem from=\"1770285132879\" duration=\"7888000\" />\r\n      <workItem from=\"1770373240163\" duration=\"613000\" />\r\n      <workItem from=\"1770747367124\" duration=\"5245000\" />\r\n      <workItem from=\"1770752667807\" duration=\"1121000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7562d7508d35df6dfe0960e5b2a757bd5ded323a)
++++ b/.idea/workspace.xml	(date 1770885394553)
+@@ -5,17 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a6ef09a9-e0ad-48e8-8955-aff97fad0001" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/imager/img.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/imager/mini.svg" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_10.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_3.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_4.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_5.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_6.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_7.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_8.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/imager/img_9.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/favorites.css" beforeDir="false" afterPath="$PROJECT_DIR$/favorites.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/favorites.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+     </list>
+@@ -52,26 +46,26 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "git-widget-placeholder": "cards",
+-    "javascript.preferred.runtime.type.id": "node",
+-    "last_opened_file_path": "C:/Users/Админ/red-clothes",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;modal&quot;,
++    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Админ/red-clothes&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -92,7 +86,8 @@
+       <workItem from="1770285132879" duration="7888000" />
+       <workItem from="1770373240163" duration="613000" />
+       <workItem from="1770747367124" duration="5245000" />
+-      <workItem from="1770752667807" duration="1121000" />
++      <workItem from="1770752667807" duration="7765000" />
++      <workItem from="1770828711786" duration="3656000" />
+     </task>
+     <servers />
+   </component>
+Index: imager/mini.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/imager/mini.svg b/imager/mini.svg
+new file mode 100644
+--- /dev/null	(date 1770804471605)
++++ b/imager/mini.svg	(date 1770804471605)
+@@ -0,0 +1,26 @@
++<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
++    <g filter="url(#filter0_d_176_141)">
++        <rect x="4" width="32" height="32" rx="8" fill="url(#paint0_linear_176_141)" shape-rendering="crispEdges"/>
++        <path d="M14.4615 4C15.4097 4 16.3233 4.19497 17.1536 4.58191C18.179 5.04172 19.2242 5.83643 20 7.14183C20.7758 5.83643 21.821 5.04172 22.8464 4.58191C23.6767 4.19497 24.5903 4 25.5385 4C29.1802 4 32 7.37499 32 11.358C32 15.8155 29.0155 19.9545 26.2439 22.8712C23.5768 25.6779 20.8983 27.5674 20.5404 27.8155C20.3817 27.9362 20.191 28 20 28C19.809 28 19.6183 27.9362 19.4596 27.8155C19.1017 27.5674 16.4231 25.6779 13.7561 22.8712C10.9845 19.9545 8 15.8155 8 11.358C8 7.37499 10.8198 4 14.4615 4Z" fill="url(#paint1_linear_176_141)"/>
++    </g>
++    <defs>
++        <filter id="filter0_d_176_141" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
++            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
++            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
++            <feOffset dy="4"/>
++            <feGaussianBlur stdDeviation="2"/>
++            <feComposite in2="hardAlpha" operator="out"/>
++            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
++            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_176_141"/>
++            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_176_141" result="shape"/>
++        </filter>
++        <linearGradient id="paint0_linear_176_141" x1="20" y1="0" x2="20" y2="32" gradientUnits="userSpaceOnUse">
++            <stop stop-color="white"/>
++            <stop offset="1" stop-color="#D9D9D9" stop-opacity="0.6"/>
++        </linearGradient>
++        <linearGradient id="paint1_linear_176_141" x1="20" y1="4" x2="20" y2="28" gradientUnits="userSpaceOnUse">
++            <stop stop-color="#FF1212"/>
++            <stop offset="0.692708" stop-color="#750000"/>
++        </linearGradient>
++    </defs>
++</svg>

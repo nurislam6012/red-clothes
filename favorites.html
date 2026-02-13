@@ -3,38 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./favorites.css">
 </head>
 <body>
-<section>
-    <h2 class="h2">Мои  избранные товары</h2>
-    <div class="favo">
-      <img src="./imager/img_11.png" alt="">
-    <div class="img-div1">
-   <h4 class="h4">Blacksi</h4>
-        <p class="p">Костюм спортивный</p>
-        <div class="sena">
-            <h2 class="h21">ЦЕНА:</h2>
-            <span class="span">3 595 ₽</span>
+
+<header class="header">
+    <div class="header-in container">
+        <div class="clothes">
+            <img src="./imager/headerImg.svg" alt="">
+            <div>
+                <h3>Red Clothes</h3>
+                <p class="text">Магазин одежды для практики</p>
+            </div>
+        </div>
+        <div class="icons">
+            <img id="basket" src="./imager/basket.svg" alt="">
+            <p id="totalHeader">0 ₽</p>
+            <a href="favorites.html"><img src="./imager/hurt.svg" alt=""></a>
+            <img src="./imager/men.svg" alt="">
         </div>
     </div>
-  </div>
+    <div class="modal">
+        <div class="modal-content">
 
+            <div class="close">
+                <img class="close-icon" src="./imager/arrow.svg" alt="">
+                <h4>Корзина</h4>
+            </div>
 
-    <div class="favo">
-        <img src="./imager/img_11.png" alt="">
-        <div class="img-div1">
-            <h4 class="h4">Blacksi</h4>
-            <p class="p">Костюм спортивный</p>
-            <div class="sena">
-                <h2 class="h21">ЦЕНА:</h2>
-                <span class="span">3 595 ₽</span>
+            <div class="cart-items">
+            </div>
+
+            <div class="empty-cart">
+                <img src="./imager/img.png" alt="Корзина пуста">
+                <p>Ваша корзина пуста</p>
+            </div>
+
+            <div class="cart-footer">
+                <div class="total">
+                    <span>К оплате:</span>
+                    <strong id="totalPrice">0 ₽</strong>
+                </div>
+                <button class="order-btn">Заказать</button>
             </div>
         </div>
     </div>
 
+</header>
 
 
+
+
+
+<section class="favorit container" style="margin-top: 200px;">
+<!--    <h2 class="h2">Мои избранные товары</h2>-->
+<!--    <div class="cardst">-->
+<!--            <img class="mini" src="imager/mini.svg">-->
+<!--        <div class="card">-->
+<!--            <img class="big-img" src="./imager/img_11.png" alt="">-->
+<!--            <div class="card-info">-->
+<!--                <h3>Blacksi</h3>-->
+<!--                <p>Костюм спортивный</p>-->
+<!--                <div>-->
+<!--                    <span class="price">-->
+<!--                       <span>ЦЕНА: </span> <br>-->
+<!--                        3 595 ₽</span>-->
+<!--                    <button class="add-btn"-->
+<!--                            data-name="Fashion.Love.Story"-->
+<!--                            data-price="3500">-->
+<!--                        +-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--            <img class="mini" src="imager/mini.svg">-->
+<!--            <img src="./imager/img_11.png" alt="">-->
+<!--            <div class="card-info">-->
+<!--                <h3>Vittoria Vicci</h3>-->
+<!--                <p>Пуловер</p>-->
+<!--                <div>-->
+<!--                    <span class="price">-->
+<!--                       <span>ЦЕНА: </span> <br>-->
+<!--                        3 595 ₽</span>-->
+<!--                    <button class="add-btn"-->
+<!--                            data-name="Fashion.Love.Story"-->
+<!--                            data-price="3500">-->
+<!--                        +-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--    </div>-->
 </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container footer-in">
+            <div class="footer-left">
+                <p class="pokupatel">Покупателям</p>
+                <p class="text">Как сделать заказ</p>
+                <p class="text">Способы оплаты</p>
+                <p class="text">Способы оплатыДоставка</p>
+                <p class="text">Возврат товара</p>
+                <p class="text">Правила продажи</p>
+                <p class="text">Вопросы и ответы</p>
+            </div>
+            <div class="footer-right">
+                <p class="class">Компания</p>
+                <p class="contakt">О нас</p>
+                <p class="contakt">Реквизиты</p>
+                <p class="contakt">Контакты</p>
+                <p class="sos">Мы в соцсетях</p>
+                <div class="programs">
+                    <img src="./imager/fasedook.svg" alt="">
+                    <img src="./imager/instagramm.svg" alt="">
+                    <img src="./imager/telegram.svg" alt="">
+                    <img src="./imager/vk.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="favorite.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
