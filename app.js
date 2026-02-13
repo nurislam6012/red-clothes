@@ -1,7 +1,6 @@
-
 const basket = document.querySelector('#basket');
 const modal = document.querySelector('.modal');
-const closeModal = document.querySelector('.close-icon')
+const closeModal = document.querySelector('.close-icon');
 
 const addButtons = document.querySelectorAll('.add-btn');
 const cartItemsContainer = document.querySelector('.cart-items');
@@ -9,37 +8,38 @@ const emptyCart = document.querySelector('.empty-cart');
 const totalPriceEl = document.querySelector('#totalPrice');
 const headerTotal = document.querySelector('#totalHeader');
 
-const zakazBtn = document.querySelector('.order-btn')
-const ofor = document.querySelector('.oformlenie');
+const zakazBtn = document.querySelector('.order-btn');
+const oforml = document.querySelector('.oformlenie');
 const footer = document.querySelector('.cart-footer');
 
-// zakazBtn.addEventListener('click', () => {
-//     ofor.style.display = 'block';
-//     cartItemsContainer.style.display = 'none';
-//     footer.style.display = 'none';
-//     // emptyCart.style.display = 'none';
-//     if (emptyCart.style.display === 'block') {
-//         cartItemsContainer.style.display = 'none'
-//         ofor.style.display = 'none'
-//         emptyCart.style.display = 'block'
-//     footer.style.display = 'flex';
-//     }
-// })
+zakazBtn.addEventListener('click', () => {
+    oforml.style.display = 'block';
+    footer.style.display = 'none';
+    cartItemsContainer.style.display = 'none';
+    if (cartItemsContainer.style.display === 'block') {
+        oforml.style.display = 'none';
+    }
+    if (emptyCart.style.display === 'block') {
+        oforml.style.display = 'none';
+    }
+    if (cartItemsContainer.style.display === 'block') {
+        oforml.style.display = 'none';
+    }
+})
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
-function saveCart(){
+
+function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
-// localStorage.clear()
 
 basket.addEventListener('click', () => {
-    modal.classList.add('open')
-})
+    modal.classList.add('open');
+});
 
 closeModal.addEventListener('click', () => {
-    modal.classList.remove('open')
-})
-
+    modal.classList.remove('open');
+});
 
 function updateCart() {
     cartItemsContainer.innerHTML = '';
@@ -60,7 +60,6 @@ function updateCart() {
                 </div>
                 <button class="remove"></button>
             `;
-
             div.querySelector('.remove').addEventListener('click', () => {
                 cart.splice(index, 1);
                 saveCart();
@@ -87,53 +86,29 @@ addButtons.forEach(btn => {
 
 updateCart();
 
-
 const hearts = document.querySelectorAll('.img-mini');
-
-let isHidden = false;
 
 hearts.forEach(heart => {
     heart.addEventListener('click', () => {
         const card = heart.parentElement;
-        if (isHidden) {
-        isHidden = false;
-            heart.classList.remove('active');
-        }else{
         heart.classList.toggle('active');
-            isHidden = true;
-        }
 
         let favorites = JSON.parse(sessionStorage.getItem('favorites')) || [];
-        favorites.push(card.outerHTML);
+        const cardHTML = card.outerHTML;
+
+        if (heart.classList.contains('active')) {
+            favorites.push(cardHTML);
+        } else {
+            favorites = favorites.filter(fav => fav !== cardHTML);
+        }
 
         sessionStorage.setItem('favorites', JSON.stringify(favorites));
     });
 });
 
-
 const img = document.querySelector('.mini-img');
-
-img.addEventListener('click', () => {
-    img.classList.toggle('active');
-});
-
-img.addEventListener('click', () => {
-    img.classList.toggle('active');
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (img) {
+    img.addEventListener('click', () => {
+        img.classList.toggle('active');
+    });
+}
