@@ -104,6 +104,7 @@ hearts.forEach(heart => {
 
         sessionStorage.setItem('favorites', JSON.stringify(favorites));
     });
+
 });
 
 const img = document.querySelector('.mini-img');
